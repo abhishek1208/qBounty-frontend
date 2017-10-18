@@ -1,0 +1,9 @@
+<h2>Users</h2>
+
+{{#each model as |user|}}
+  <div>
+    <div>{{user.id}}</div>
+    <div>{{user.username}}</div>
+  </div>
+{{/each}}
+{{outlet}}
