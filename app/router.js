@@ -7,8 +7,14 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('users');
-  this.route('tasks');
+  this.route('users', function() {
+    this.route('index', {path: '/'})
+    this.route('id', {path: '/:id'});
+  });
+  this.route('tasks', function() {
+    this.route('index', {path: '/'});
+    this.route('id', {path: '/:id'});
+  });
   this.route('claims');
 });
 

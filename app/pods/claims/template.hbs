@@ -1,1 +1,11 @@
+<div class="ui one column">
+  {{#each model as |claim i|}}
+    <div class="column">
+      {{claim.description}}
+      <br>
+      {{claim.claimant.username}}
+    </div>
+  {{/each}}
+</div>
+
 {{outlet}}

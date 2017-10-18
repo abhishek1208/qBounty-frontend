@@ -1,0 +1,10 @@
+<div class="ui grid">
+  {{#each model as |user i|}}
+    <div class="four wide column">
+      {{#user-card user=user pos=i}}{{/user-card}}
+    </div>
+  {{/each}}
+
+</div>
+
+{{outlet}}

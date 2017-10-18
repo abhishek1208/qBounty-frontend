@@ -3,7 +3,11 @@
     <img src="/images/placeholders/user-placeholder.jpg">
   </div>
   <div class="content">
-    <a class="header">{{user.username}}</a>
+    <h3 class="header">
+      {{#link-to "users.id" user.id}}
+        {{user.username}}
+      {{/link-to}}
+    </h3>
     <div class="meta">
       <span class="date">{{user.id}}</span>
     </div>

@@ -1,0 +1,20 @@
+<div class="ui segment">
+  <div class="large content">
+    <h3 class="large thin text">
+      {{#link-to "tasks.id" task.id}}
+        {{task.title}}
+      {{/link-to}}
+    </h3>
+    <div class="description">
+      <p>{{task.description}}</p>
+    </div>
+    <div class="extra">
+      <i class="trophy icon"></i>
+      {{task.instances}}
+      <i class="user icon"></i>
+      {{#link-to "users.id" task.owner.id}}{{task.owner.username}}{{/link-to}}
+    </div>
+  </div>
+</div>
+
+{{yield}}

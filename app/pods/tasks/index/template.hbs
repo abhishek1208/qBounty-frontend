@@ -1,0 +1,8 @@
+<div class="ui segments">
+  {{#each model as |task i|}}
+    {{#task-card task=task pos=i}}
+    {{/task-card}}
+  {{/each}}
+</div>
+
+{{outlet}}
