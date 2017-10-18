@@ -1,9 +1,11 @@
 <h2>Users</h2>
 
-{{#each model as |user|}}
-  <div>
-    <div>{{user.id}}</div>
-    <div>{{user.username}}</div>
-  </div>
-{{/each}}
-{{outlet}}
+<div class="ui grid">
+  {{#each model as |user|}}
+    <div class="four wide column">
+      {{#user-card user=user}}{{/user-card}}
+    </div>
+  {{/each}}
+  {{outlet}}
+</div>
+
